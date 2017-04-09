@@ -42,8 +42,11 @@ protected void onCreate(Bundle savedInstanceState){
 @Override
 public void onClick(View v){
         String item=text.getText().toString();
+        String i=phone.getText().toString();
         items.add(item);
+        items.add(i);
         text.setText("");
+        phone.setText("");
 
         }
     @Override
