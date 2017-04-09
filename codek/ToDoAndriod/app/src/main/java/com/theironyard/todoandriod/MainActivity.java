@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         ListView list;
         EditText text;
+        EditText phone;
         Button addButton;
 
 
@@ -27,6 +28,7 @@ protected void onCreate(Bundle savedInstanceState){
 
         list=(ListView)findViewById(R.id.listView);
         text=(EditText)findViewById((R.id.editText));
+        phone=(EditText)findViewById((R.id.editText2));
         addButton=(Button)findViewById((R.id.button));
 
 
@@ -47,7 +49,7 @@ public void onClick(View v){
     @Override
     public boolean onItemLongClick(AdapterView<?> parent,View view, int position, long id){
 
-        String item = items. getItem(position);
+        String item = items.getItem(position);
         items.remove(item);
         return true;
     }
